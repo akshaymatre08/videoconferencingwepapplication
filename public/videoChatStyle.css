@@ -1,0 +1,307 @@
+/* CSS FILE CONTAINING STYLES OF VIDEO CALL PAGE, HOME PAGE and  THANK YOU PAGE  */
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  .popup .popuptext {
+    visibility: hidden;
+    width: 360px;
+    background-color: rgb(65, 61, 61);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 3px;padding-top: 8px;padding-bottom: 3px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+  }
+  
+  /* Popup arrow */
+  .popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  
+  /* Toggle this class - hide and show the popup */
+  .popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+  }
+  .NewMeetingButton,
+  .PreviousMeetingButton {
+    -webkit-transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+    transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    border: 2px solid #e74c3c;
+    border-radius: 0.6em;
+    color: #e74c3c;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1;
+    margin: 20px;
+    padding: 1.2em 2.8em;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+  }
+  /* Add animation (fade in the popup) */
+  @-webkit-keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  #video-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  video {
+    height: 300px;
+    width: 400px;
+    object-fit: cover;
+    padding: 8px;
+  }
+  .main {
+    height: 100vh;
+    display: flex;
+  }
+  
+  .main__left {
+    flex: 0.8;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .main__right {
+    flex: 0.2;
+  }
+  
+  .main__videos {
+    flex-grow: 1;
+    background-image: url('https://image.freepik.com/free-vector/blue-diagonal-square-grid-background_1409-1251.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+  }
+  
+  .main__controls {
+    background-color: #37434e;
+  }
+  
+  .main__right {
+    background-image: url('https://image.freepik.com/free-photo/navy-blue-concrete-wall-with-scratches_53876-102666.jpg');
+    background-size: cover;
+    border-left: 2px solid #81818a;
+  }
+  
+  .main__controls {
+    color: #f8f4f4;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+  }
+  
+  .main__controls__block {
+    display: flex;
+  }
+  
+  .main__controls__button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 10px;
+    min-width: 80px;
+    cursor: pointer;
+  }
+  
+  .main__controls__button:hover {
+    background-color: #343434;
+    border-radius: 5px;
+  }
+  
+  .main__controls__button i {
+    font-size: 24px;
+  }
+  
+  .main__right {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .main__header {
+    padding-top: 5px;
+    color: #f5f5f5;
+    text-decoration: underline;
+    text-align: center;
+  }
+  
+  .main__chat_window {
+    flex-grow: 1;
+    overflow-y: auto;
+  }
+  
+  .messages {
+    color: white;
+    list-style: none;
+  }
+  
+  .main__message_container {
+    padding: 22px 12px;
+    display: flex;
+  }
+  
+  .main__message_container input {
+    flex-grow: 1;
+    background-color: rgb(58, 58, 58);
+    border: none;
+    color: #f5f5f5;
+  }
+  .leavemeet{
+      height: 50px;background-color: #e00606;
+  }
+  .leave_meeting {
+    color: #f5f1f0;font-weight: bold;
+  }
+  
+  .unmute,
+  .stop {
+    color: #cc3b33;
+  }
+  
+  .thanks-body {
+    background-image: url("https://images.unsplash.com/photo-1586810165616-94c631fc2f79?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80");
+    background-size: cover;
+    font-family: "Montserrat", sans-serif;
+  }
+  .home-body {
+    background-image: url("https://images.unsplash.com/photo-1432821596592-e2c18b78144f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80");
+    background-size: cover;
+    font-family: "Montserrat", sans-serif;
+  }
+  .NewMeetingButton,
+  .PreviousMeetingButton,
+  .ThankspageButton,
+  .HomePageButton {
+    -webkit-transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+    transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: black;
+    width: 300px;
+    border: 2px solid #e74c3c;
+    border-radius: 0.6em;
+    color: #e74c3c;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    color: aliceblue;
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1;
+    margin: 20px;
+    padding: 1.2em 2.8em;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+  }
+  .HomePageButton{
+    width: 350px;
+  }
+  .NewMeetingButton:hover,
+  .HomePageButton:hover,
+  .PreviousMeetingButton:hover {
+    box-shadow: 0 0 40px 40px #e96354 inset;
+  }
+  .thanksHeading {
+    color: aqua;text-align: center;
+    text-decoration: underline;
+  }
+  .homebuttons{
+    width: 450px;
+  }
+  .homeHeading{
+    color: #700803;
+  }
+  .homeHeadingDiv{
+    background-color: #d2d2d2;opacity: 0.7;text-align: center;
+  }
+  .HomePageButton .tooltiptext {
+    visibility: hidden;
+    width: 250px;
+    background-color: rgb(66, 61, 61);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    opacity: 0.7;
+    position: absolute;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+    z-index: 1;
+  }
+  
+  .HomePageButton:hover .tooltiptext {
+    visibility: visible;
+  }
+  .homefooter{
+    text-align: center;font-weight: bold;color: black;font-size: 20px;
+  }
+  .beautifyText{
+    font-size: 20px;color: #0227a1;
+  }
+  .beautifyTextLink:hover{
+    color: #e70707;
+  }

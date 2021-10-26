@@ -1,0 +1,31 @@
+<!-- THANK YOU PAGE , RENDERED WHEN USER LEAVES MEETING OF LEAVES CHAT ROOM  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Room|Thanks</title>
+    <link rel="icon" href="https://image.flaticon.com/icons/png/512/1177/1177925.png" type="image/x-icon">
+    <link rel="stylesheet" href="videoChatStyle.css">
+    <style>
+        body{background-image: url('https://images.unsplash.com/photo-1586810165616-94c631fc2f79?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+        background-size: cover;font-family: 'Montserrat', sans-serif;}          
+    </style>
+</head>
+<body class="thanks-body">
+    <h1 class="thanksHeading">You left the meeting! <br>  
+        Thank you for your time , we hope you enjoyed this meeting   <br><br>
+    </h1>
+    <button onclick="goBack()" class="PreviousMeetingButton">Rejoin Previous One</button><br>
+    <a href="/index" style="color: aliceblue;display: inline-block;"><button class="ThankspageButton">Join New Chat Room</button></a><br>
+    <a href="/room" style="color: aliceblue;display: inline-block;"><button class="ThankspageButton">Start New Meeting</button></a><br>
+    <a href="/home" style="color: aliceblue;display: inline-block;"><button class="ThankspageButton">Visit Home Page</button></a><br>
+    <a href="mailto:meghbarn1002@gmail.com" style="color: aliceblue;display: inline-block;"><button class="ThankspageButton">Contact Us</button></a>
+    <script>
+    function goBack() {
+    window.history.back();
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!-- HOME PAGE OF APPLICATION  -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Room|Home</title>
+    <link rel="icon" href="https://image.flaticon.com/icons/png/512/1177/1177925.png" type="image/x-icon">
+    <link rel="stylesheet" href="videoChatStyle.css">
+    <style>
+        body {
+            background-image: url('https://images.unsplash.com/photo-1432821596592-e2c18b78144f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80');
+            background-size: cover;
+            font-family: 'Montserrat', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="home-body">
+    <div class="homeHeadingDiv">
+        <h1 class="homeHeading">Welcome to our Chat room application 💙 <br>
+            We try our best to give to make your experience better 😇 <br>
+        </h1>
+    </div>
+    <div class="homebuttons">
+        <a href="/index" style="color: aliceblue;display: inline-block;">
+            <button class="HomePageButton popup" onclick="chatRoomPopupFunction()">
+                Join New ChatRoom
+            </button>
+        </a><br>
+        <a href="/room" style="color: aliceblue;display: inline-block;">
+            <button class="HomePageButton popup" onclick="InstantMeetPopupFunction()">
+                Start Instant Meeting
+            </button>
+        </a><br><br>
+        <a href="mailto:akshaymatre08@gmail.com" style="color: aliceblue;display: inline-block;"><button
+                class="HomePageButton">Contact Us</button></a>
+        <button class="HomePageButton popup" onclick="AboutUsPopupFunction()">About Us
+            <span class="popuptext" id="AboutUsPopup">
+                Our purpose is to sevre you a platform where you can connect with your friends virtually, 
+                arrange meetings and chat with others (I KNOW YOU ARE FED OF VIRTUAL MEETINS 😟 ) <br />
+                Click <a href="https://www.linkedin.com/in/akshay-matre-7280ba1ab/" style="color: rgb(226, 23, 23);">here  </a> to
+                connect with me and share your experiences about this application. I will love to hear
+                from <strong> YOU!</strong>
+            </span>
+        </button>
+        <button onclick="goBack()" class="HomePageButton">Back</button>
+    </div>
+    <div class="homefooter">
+        <p>This Web Application Is Built By Akshay Matre Under 
+                The guidance of Mr M L Dhore Sir.
+            <br>
+            We thank <b class="beautifyText">Akanksha Thokade</b> and
+            <b class="beautifyText">Sudarshan Hon</b> for their constant help and support. 😇
+        </p>
+        <p> &copy; AKSHAY MATRE</p>
+    </div>
+
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+        function AboutUsPopupFunction() {
+            var popup = document.getElementById("AboutUsPopup");
+            popup.classList.toggle("show");
+        }
+        function chatRoomPopupFunction() {
+            var popup = document.getElementById("ChatRoomPopup");
+            popup.classList.toggle("show");
+        }
+        function InstantMeetPopupFunction() {
+            var popup = document.getElementById("InstantRoomPopup");
+            popup.classList.toggle("show");
+        }
+    </script>
+</body>
+
+</html>
