@@ -1,6 +1,6 @@
 
 # Teams-Clone
-A very interesting project built under Microsoft Engage Mentorship Program.
+A very interesting project video chat conferencing application.
 The purpose of this project is to build a working prototype where more that one users can chat and have video conference with others.
 
 Here are some of pictures displaying what I have built.
